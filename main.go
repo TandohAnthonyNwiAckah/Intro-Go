@@ -51,19 +51,49 @@ func main() {
 	// fmt.Print("Hello,")   // Print without newline
 	// fmt.Println("World!") // Print with newline
 
-	age := 25
-	name := "Tony"
-	// fmt.Println("my age is", age, "and my name is", name)
+	// age := 25
+	// name := "Tony"
+	// // fmt.Println("my age is", age, "and my name is", name)
 
-	// Printf (formatted string), %_ = format specifier
-	fmt.Printf("my age is %v and my name is %v \n", age, name)    // %v = value in default format
-	fmt.Printf("my age is %q    and my name is %q \n", age, name) // %q = quotes
-	fmt.Printf("age is of type %T \n", age)                       // %T is the type
-	fmt.Printf("you scored %f points! \n", 225.55)                // %f = float format
-	fmt.Printf("you scored %0.1f points! \n", 225.55)             // %0.2f = float with 2 decimal points
+	// // Printf (formatted string), %_ = format specifier
+	// fmt.Printf("my age is %v and my name is %v \n", age, name)    // %v = value in default format
+	// fmt.Printf("my age is %q    and my name is %q \n", age, name) // %q = quotes
+	// fmt.Printf("age is of type %T \n", age)                       // %T is the type
+	// fmt.Printf("you scored %f points! \n", 225.55)                // %f = float format
+	// fmt.Printf("you scored %0.1f points! \n", 225.55)             // %0.2f = float with 2 decimal points
 
-	// Sprintf (save formatted strings)
-	var str = fmt.Sprintf("my age is %v and my name is %v \n", age, name)
-	fmt.Println("the saved string is:", str)
+	// // Sprintf (save formatted strings)
+	// var str = fmt.Sprintf("my age is %v and my name is %v \n", age, name)
+	// fmt.Println("the saved string is:", str)
+
+	// Arrays & Slices
+
+	// var ages [3]int = [3]int{20, 25, 30}
+	var ages = [3]int{20, 25, 30}
+
+	names := [4]string{"tony", "john", "jane", "thomas"}
+
+	// names[1] = "tandoh"
+
+	fmt.Println(ages, len(ages))
+	fmt.Println(names, len(names))
+
+	// slices (use arrays under the hood)
+	var scores = []int{100, 50, 60}
+	scores[2] = 25
+	scores = append(scores, 85)
+
+	fmt.Println(scores, len(scores))
+
+	// slice ranges
+	rangeOne := names[1:4] // doesn't include pos 4 element
+	rangeTwo := names[2:]  //includes the last element
+	rangeThree := names[:3]
+
+	fmt.Println(rangeOne, rangeTwo, rangeThree)
+	fmt.Printf("the type of rangeOne is %T \n", rangeOne)
+
+	rangeOne = append(rangeOne, "yaba")
+	fmt.Println(rangeOne)
 
 }

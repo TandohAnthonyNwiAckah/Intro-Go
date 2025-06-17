@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
 // func sayGreeting(n string) {
 // 	fmt.Printf("Good morning %v \n", n)
@@ -19,24 +16,33 @@ import (
 // 	return math.Pi * r * r
 // }
 
-func getInitials(n string) (string, string) {
-	s := strings.ToUpper(n)
-	names := strings.Split(s, " ")
+// func getInitials(n string) (string, string) {
+// 	s := strings.ToUpper(n)
+// 	names := strings.Split(s, " ")
 
-	var initials []string
+// 	var initials []string
 
-	for _, v := range names {
-		initials = append(initials, v[:1])
-	}
+// 	for _, v := range names {
+// 		initials = append(initials, v[:1])
+// 	}
 
-	if len(initials) > 1 {
-		return initials[0], initials[1]
-	}
+// 	if len(initials) > 1 {
+// 		return initials[0], initials[1]
+// 	}
 
-	return initials[0], "_"
-}
+//		return initials[0], "_"
+//	}
+var score = 99.5
 
 func main() {
+
+	sayHello("doe")
+
+	showScore()
+
+	for _, v := range points {
+		fmt.Println(v)
+	}
 
 	// fmt.Println("Hello, World!")
 
@@ -228,13 +234,13 @@ func main() {
 
 	// Multiple Return Values
 
-	fn1, sn1 := getInitials("john doe")
-	fmt.Println(fn1, sn1)
+	// fn1, sn1 := getInitials("john doe")
+	// fmt.Println(fn1, sn1)
 
-	fn2, sn2 := getInitials("cloud strife")
-	fmt.Println(fn2, sn2)
+	// fn2, sn2 := getInitials("cloud strife")
+	// fmt.Println(fn2, sn2)
 
-	fn3, sn3 := getInitials("tony")
-	fmt.Println(fn3, sn3)
+	// fn3, sn3 := getInitials("tony")
+	// fmt.Println(fn3, sn3)
 
 }

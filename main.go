@@ -6,7 +6,7 @@ func main() {
 	// fmt.Println("Hello, World!")
 
 	// Print
-	// tutFunc()
+	// tutPrint()
 
 	// Arrays & Slices
 	// tutArray()
@@ -20,4 +20,8 @@ func main() {
 	// Maps
 	// tutMap()
 
+	// Pass by value
+	// Go is a pass by value language.
+
+	tutPassValue()
 }

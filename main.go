@@ -22,6 +22,9 @@ func main() {
 
 	// Pass by value
 	// Go is a pass by value language.
+	// tutPassValue()
 
-	tutPassValue()
+	// Pointers
+	tutPointer()
+
 }

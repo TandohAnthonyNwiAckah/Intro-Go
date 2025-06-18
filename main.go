@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 var score = 99.5
 
 func main() {
@@ -35,17 +33,9 @@ func main() {
 	// tutPointer()
 
 	// Structs
+	// tutStruct()
 
-	mybill := newBill("Tony bill")
-
-	mybill.addItem("onion soup", 4.50)
-	mybill.addItem("veg pie", 8.95)
-	mybill.addItem("toffee pudding", 4.95)
-	mybill.addItem("coffee", 3.25)
-
-	mybill.updateTip(10)
-
-	// fmt.Println("Bill Name:", mybill)
-	fmt.Println(mybill.format())
+	// User Input
+	tutInput()
 
 }

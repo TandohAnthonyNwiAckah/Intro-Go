@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"hello/hello"
+)
+
 var score = 99.5
 
 func main() {
@@ -7,6 +12,9 @@ func main() {
 
 	// Print
 	// tutPrint()
+
+	result := hello.SayHello("Tony")
+	fmt.Println(result)
 
 	// Arrays & Slices
 	// tutArray()
@@ -25,6 +33,6 @@ func main() {
 	// tutPassValue()
 
 	// Pointers
-	tutPointer()
+	// tutPointer()
 
 }

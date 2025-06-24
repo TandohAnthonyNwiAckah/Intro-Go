@@ -30,7 +30,7 @@ func main() {
 	// tutPassValue()
 
 	// Pointers
-	// tutPointer()
+	tutPointer()
 
 	// Structs
 	// tutStruct()
@@ -39,6 +39,6 @@ func main() {
 	// tutInput()
 
 	//Time
-	TutTime()
+	// TutTime()
 
 }

@@ -59,3 +59,33 @@ OR
 go run . 
 ```
  
+
+
+
+
+
+
+ ## Build Go
+To build your Go project into a binary, use:
+
+```bash
+go build
+```
+
+This will create an executable file in the current directory. You can specify the output name with:
+
+```bash
+go build -o myapp
+```
+
+
+### Cross-Compiling with GOOS and GOARCH
+
+Go makes it easy to build binaries for different operating systems and architectures. Set the `GOOS` and `GOARCH` environment variables before running `go build`. For example, to build a Linux binary from macOS:
+
+```bash
+GOOS=linux GOARCH=amd64 go build -o myapp-linux
+```
+
+Common values for `GOOS` include `linux`, `windows`, and `darwin` (macOS). For `GOARCH`, common values are `amd64` and `arm64`.
+

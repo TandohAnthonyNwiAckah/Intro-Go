@@ -36,6 +36,9 @@ func main() {
 	// tutStruct()
 
 	// User Input
-	tutInput()
+	// tutInput()
+
+	//Time
+	TutTime()
 
 }
